@@ -1,0 +1,129 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+p{
+    margin: 0;
+    padding: 0;
+}
+#fornecedores{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .text_title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            margin-left: 10px;
+        }
+    }
+}
+.tipo_pessoa{
+    display: flex;
+    gap: 14px;
+    margin-bottom: 15px;
+}
+.acoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    #editar, #deletar{
+        font-size: 15px;
+    }
+    #editar{
+        background: yellow;
+        color: black;
+        font-weight: bold;
+        transition: all .5s;
+        &:hover{
+            color: yellow;
+            background: black;
+            transition: all .5s;
+            border: 1px solid yellowblyellowue;
+        }
+    }
+    #deletar{
+        background: red;
+        color: black;
+        font-weight: bold;
+        transition: all .5s;
+        &:hover{
+            color: red;
+            background: black;
+            transition: all .5s;
+            border: 1px solid yellowblyellowue;
+        }
+    }
+}
+form{
+    span{
+        color: red;
+    }
+    .card-title{
+        color: #0d0d81;
+        font-weight: bold;
+    }
+    .cadastrar{
+        background: blue;
+        color: #fff;
+        font-weight: bold;
+        transition: all .5s;
+        margin-bottom: 15px;
+        &:hover{
+            color: blue;
+            background: #fff;
+            transition: all .5s;
+            border: 1px solid blue;
+        }
+    }
+    .botao{
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        .adicionar, .adicionar_adicionais{
+            background: #0bc5dd;
+            font-weight: bold;
+            transition: all .5s;
+            &:hover{
+                color: #0bc5dd;
+                background: #fff;
+                transition: all .5s;
+                border: 1px solid;
+
+            }
+        }
+        .remover, .remover_adicionais{
+            background: red;
+            color: #fff;
+            font-weight: bold;
+            transition: all .5s;
+            &:hover{
+                color: red;
+                background: #fff;
+                transition: all .5s;
+                border: 1px solid;
+            }
+        }
+    }
+    .adiciona_contatos{
+        display: flex;
+        justify-content: end;
+        .botao{
+            .adicionar_adicionais{
+                background: black;
+                color: #0bc5dd;
+                &:hover{
+                    background: #fff;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
